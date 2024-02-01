@@ -11,9 +11,7 @@ const story = {
 export const Default = (args: IStackProps) => (
   <Stack {...args}>
     {Array.isArray(args.children) &&
-      args.children.map((item: any, index: number) => (
-        <Squares key={index} item={item} />
-      ))}
+      args.children.map((item, index) => <Squares key={index} item={item} />)}
   </Stack>
 );
 
