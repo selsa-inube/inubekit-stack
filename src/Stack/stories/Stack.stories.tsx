@@ -1,4 +1,4 @@
-import { Stack } from "../index";
+import { Stack, IStackProps } from "../index";
 import { props } from "../props";
 import { Squares } from "./Squares";
 
@@ -8,11 +8,12 @@ const story = {
   argTypes: props,
 };
 
-export const Default = (args: any) => (
+export const Default = (args: IStackProps) => (
   <Stack {...args}>
-    {args.children.map((item: any, index: number) => (
-      <Squares key={index} item={item} />
-    ))}
+    {Array.isArray(args.children) &&
+      args.children.map((item: any, index: number) => (
+        <Squares key={index} item={item} />
+      ))}
   </Stack>
 );
 

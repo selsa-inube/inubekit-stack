@@ -1,6 +1,11 @@
 import { StyledSquare } from "./stories.styles";
+import React from "react";
 
-const Squares = (props: any) => {
+interface ISquaresProps {
+  item: React.ReactNode;
+}
+
+const Squares = (props: ISquaresProps) => {
   const { item } = props;
 
   return <StyledSquare>{item}</StyledSquare>;
