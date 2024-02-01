@@ -21,7 +21,7 @@ export interface IStackProps {
   padding?: string;
 }
 
-const Stack = (props: IStackProps) => {
+export const Stack = (props: IStackProps) => {
   const {
     children,
     wrap,
@@ -53,5 +53,3 @@ const Stack = (props: IStackProps) => {
     </StyledFlex>
   );
 };
-
-export { Stack };
