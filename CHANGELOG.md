@@ -1,3 +1,19 @@
+# v0.0.2 (Thu Feb 01 2024)
+
+#### 🐛 Bug Fix
+
+- implementation of  `<Stack />` component [#1](https://github.com/selsa-inube/inubekit-stack/pull/1) ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+#### ⚠️ Pushed to `main`
+
+- Initial commit ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+#### Authors: 1
+
+- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+---
+
 # v0.0.1 (Wed Jan 17 2024)
 
 #### ⚠️ Pushed to `main`
