@@ -7,7 +7,7 @@ import {
   AlignContent,
 } from "./props";
 
-export interface IStackProps {
+export interface IStack {
   children?: React.ReactNode;
   wrap?: WrapControl;
   direction?: DirectionAlignment;
@@ -21,7 +21,7 @@ export interface IStackProps {
   padding?: string;
 }
 
-export const Stack = (props: IStackProps) => {
+export const Stack = (props: IStack) => {
   const {
     children,
     wrap,

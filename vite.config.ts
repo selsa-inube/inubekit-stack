@@ -12,7 +12,13 @@ export default defineConfig({
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ["react", "styled-components"],
+      external: [
+        "react",
+        "react-dom",
+        "react/jsx-runtime",
+        "styled-components",
+        "@inube/foundations",
+      ],
       output: {
         globals: {
           react: "React",

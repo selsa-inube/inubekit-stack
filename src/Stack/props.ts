@@ -1,5 +1,3 @@
-import { inube } from "@inubekit/foundations";
-
 export const alignContentProperties = [
   "baseline",
   "flex-start",
@@ -80,9 +78,6 @@ export const wrapControls = [
 
 export type WrapControl = (typeof wrapControls)[number];
 
-const { spacing } = inube;
-export type Spacing = keyof typeof spacing;
-
 export const props = {
   children: {
     options: "",
@@ -153,7 +148,7 @@ export const props = {
   height: {
     type: { name: "string", required: false },
     description:
-      "Sets the margin in px or global values for all four sides of the component",
+      "Sets the margin in px or global values for all four sides of the component.",
     table: {
       defaultValue: { summary: "0px" },
     },
@@ -162,7 +157,7 @@ export const props = {
   width: {
     type: { name: "string", required: false },
     description:
-      "Sets the margin in px or global values for all four sides of the component",
+      "Sets the margin in px or global values for all four sides of the component.",
     table: {
       defaultValue: { summary: "0px" },
     },
@@ -171,18 +166,18 @@ export const props = {
   margin: {
     type: { name: "string", required: false },
     description:
-      "Sets the margin in px or global values for all four sides of the component. Accepted values are the spacing tokens ",
+      "Sets the margin in px or global values for all four sides of the component.",
     table: {
-      defaultValue: { summary: "s0" },
+      defaultValue: { summary: "0px" },
     },
   },
 
   padding: {
     type: { name: "string", required: false },
     description:
-      "Sets the padding in px p global values for all four sides of the component. Accepted values are the spacing tokens",
+      "Sets the padding in px p global values for all four sides of the component.",
     table: {
-      defaultValue: { summary: "s0" },
+      defaultValue: { summary: "0px" },
     },
   },
 };

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { inube } from "@inubekit/foundations";
 
-const StyledFlex = styled.div`
+export const StyledFlex = styled.div`
   display: flex;
   justify-content: ${({ $justifyContent }) => $justifyContent};
   align-items: ${({ $alignItems }) => $alignItems};
@@ -11,14 +11,6 @@ const StyledFlex = styled.div`
   height: ${({ $height }) => $height};
   width: ${({ $width }) => $width};
   gap: ${({ $gap }) => $gap};
-  margin: ${({ $margin }) => {
-    const marginValue = $margin.split("");
-    return marginValue.map((value) => inube?.spacing?.[value]).join(" ");
-  }};
-  padding: ${({ $padding }) => {
-    const paddingValue = $padding.split(" ");
-    return paddingValue.map((value) => inube?.spacing?.[value]).join(" ");
-  }};
+  margin: ${({ $margin }) => $margin};
+  padding: ${({ $padding }) => $padding};
 `;
-
-export { StyledFlex };
