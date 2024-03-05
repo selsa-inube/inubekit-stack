@@ -5,8 +5,10 @@ interface ISquaresProps {
   item: React.ReactNode;
 }
 
-export const Squares = (props: ISquaresProps) => {
+const Squares = (props: ISquaresProps) => {
   const { item } = props;
 
   return <StyledSquare>{item}</StyledSquare>;
 };
+
+export { Squares };

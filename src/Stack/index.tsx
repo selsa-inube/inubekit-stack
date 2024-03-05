@@ -7,7 +7,7 @@ import {
   AlignContent,
 } from "./props";
 
-export interface IStack {
+interface IStack {
   children?: React.ReactNode;
   wrap?: WrapControl;
   direction?: DirectionAlignment;
@@ -21,7 +21,7 @@ export interface IStack {
   padding?: string;
 }
 
-export const Stack = (props: IStack) => {
+const Stack = (props: IStack) => {
   const {
     children,
     wrap,
@@ -32,8 +32,8 @@ export const Stack = (props: IStack) => {
     height,
     width,
     gap,
-    margin = "s0",
-    padding = "s0",
+    margin = "0px",
+    padding = "0px",
   } = props;
 
   return (
@@ -53,3 +53,7 @@ export const Stack = (props: IStack) => {
     </StyledFlex>
   );
 };
+
+export { Stack };
+
+export type { IStack };

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { inube } from "@inubekit/foundations";
 
-export const StyledSquare = styled.div`
+const StyledSquare = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,3 +12,5 @@ export const StyledSquare = styled.div`
   width: 70px;
   color: ${inube.text.light.content.color.regular};
 `;
+
+export { StyledSquare };

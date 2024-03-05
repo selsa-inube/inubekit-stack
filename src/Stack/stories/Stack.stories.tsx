@@ -8,7 +8,7 @@ const story = {
   argTypes: props,
 };
 
-export const Default = (args: IStack) => (
+const Default = (args: IStack) => (
   <Stack {...args}>
     {Array.isArray(args.children)
       ? args.children.map((item, index) => <Squares key={index} item={item} />)
@@ -31,3 +31,5 @@ Default.args = {
 };
 
 export default story;
+
+export { Default };
