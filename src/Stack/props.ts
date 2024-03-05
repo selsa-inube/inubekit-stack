@@ -1,6 +1,4 @@
-import { inube } from "@inubekit/foundations";
-
-export const alignContentProperties = [
+const alignContentProperties = [
   "baseline",
   "flex-start",
   "flex-end",
@@ -17,9 +15,9 @@ export const alignContentProperties = [
   "stretch",
   "normal",
 ] as const;
-export type AlignContent = (typeof alignContentProperties)[number];
+type AlignContent = (typeof alignContentProperties)[number];
 
-export const alignItemsProperties = [
+const alignItemsProperties = [
   "baseline",
   "normal",
   "flex-start",
@@ -34,9 +32,9 @@ export const alignItemsProperties = [
   "start",
   "end",
 ] as const;
-export type AlignItem = (typeof alignItemsProperties)[number];
+type AlignItem = (typeof alignItemsProperties)[number];
 
-export const directionAlignments = [
+const directionAlignments = [
   "row",
   "column",
   "row-reverse",
@@ -46,9 +44,9 @@ export const directionAlignments = [
   "revert",
   "unset",
 ] as const;
-export type DirectionAlignment = (typeof directionAlignments)[number];
+type DirectionAlignment = (typeof directionAlignments)[number];
 
-export const justifyContentProperties = [
+const justifyContentProperties = [
   "flex-start",
   "flex-end",
   "center",
@@ -66,9 +64,9 @@ export const justifyContentProperties = [
   "stretch",
   "normal",
 ] as const;
-export type JustifyContent = (typeof justifyContentProperties)[number];
+type JustifyContent = (typeof justifyContentProperties)[number];
 
-export const wrapControls = [
+const wrapControls = [
   "wrap",
   "nowrap",
   "wrap-reverse",
@@ -78,12 +76,9 @@ export const wrapControls = [
   "unset",
 ] as const;
 
-export type WrapControl = (typeof wrapControls)[number];
+type WrapControl = (typeof wrapControls)[number];
 
-const { spacing } = inube;
-export type Spacing = keyof typeof spacing;
-
-export const props = {
+const props = {
   children: {
     options: "",
     control: { type: "string" },
@@ -153,7 +148,7 @@ export const props = {
   height: {
     type: { name: "string", required: false },
     description:
-      "Sets the margin in px or global values for all four sides of the component",
+      "Sets the margin in px or global values for all four sides of the component.",
     table: {
       defaultValue: { summary: "0px" },
     },
@@ -162,7 +157,7 @@ export const props = {
   width: {
     type: { name: "string", required: false },
     description:
-      "Sets the margin in px or global values for all four sides of the component",
+      "Sets the margin in px or global values for all four sides of the component.",
     table: {
       defaultValue: { summary: "0px" },
     },
@@ -171,18 +166,28 @@ export const props = {
   margin: {
     type: { name: "string", required: false },
     description:
-      "Sets the margin in px or global values for all four sides of the component. Accepted values are the spacing tokens ",
+      "Sets the margin in px or global values for all four sides of the component.",
     table: {
-      defaultValue: { summary: "s0" },
+      defaultValue: { summary: "0px" },
     },
   },
 
   padding: {
     type: { name: "string", required: false },
     description:
-      "Sets the padding in px p global values for all four sides of the component. Accepted values are the spacing tokens",
+      "Sets the padding in px p global values for all four sides of the component.",
     table: {
-      defaultValue: { summary: "s0" },
+      defaultValue: { summary: "0px" },
     },
   },
+};
+
+export { props };
+
+export type {
+  AlignContent,
+  AlignItem,
+  DirectionAlignment,
+  JustifyContent,
+  WrapControl,
 };
