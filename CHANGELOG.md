@@ -1,3 +1,20 @@
+# v2.0.0 (Tue Mar 05 2024)
+
+#### 💥 Breaking Change
+
+- Update latest foundations version, spacing tokens and interface [#4](https://github.com/selsa-inube/inubekit-stack/pull/4) ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+#### 🐛 Bug Fix
+
+- configure dependencies not to be packaged and publish new version [#3](https://github.com/selsa-inube/inubekit-stack/pull/3) ([@Andresbl123](https://github.com/Andresbl123))
+
+#### Authors: 2
+
+- Andres ([@Andresbl123](https://github.com/Andresbl123))
+- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+---
+
 # v1.0.1 (Fri Feb 02 2024)
 
 #### 🐛 Bug Fix
