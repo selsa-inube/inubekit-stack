@@ -15,7 +15,7 @@ const alignContentProperties = [
   "stretch",
   "normal",
 ] as const;
-type AlignContent = (typeof alignContentProperties)[number];
+type IStackAlignContent = (typeof alignContentProperties)[number];
 
 const alignItemsProperties = [
   "baseline",
@@ -32,7 +32,7 @@ const alignItemsProperties = [
   "start",
   "end",
 ] as const;
-type AlignItem = (typeof alignItemsProperties)[number];
+type IStackAlignItem = (typeof alignItemsProperties)[number];
 
 const directionAlignments = [
   "row",
@@ -44,7 +44,7 @@ const directionAlignments = [
   "revert",
   "unset",
 ] as const;
-type DirectionAlignment = (typeof directionAlignments)[number];
+type IStackDirectionAlignment = (typeof directionAlignments)[number];
 
 const justifyContentProperties = [
   "flex-start",
@@ -64,7 +64,7 @@ const justifyContentProperties = [
   "stretch",
   "normal",
 ] as const;
-type JustifyContent = (typeof justifyContentProperties)[number];
+type IStackJustifyContent = (typeof justifyContentProperties)[number];
 
 const wrapControls = [
   "wrap",
@@ -76,7 +76,7 @@ const wrapControls = [
   "unset",
 ] as const;
 
-type WrapControl = (typeof wrapControls)[number];
+type IStackWrapControl = (typeof wrapControls)[number];
 
 const props = {
   children: {
@@ -185,9 +185,9 @@ const props = {
 export { props };
 
 export type {
-  AlignContent,
-  AlignItem,
-  DirectionAlignment,
-  JustifyContent,
-  WrapControl,
+  IStackAlignContent,
+  IStackAlignItem,
+  IStackDirectionAlignment,
+  IStackJustifyContent,
+  IStackWrapControl,
 };
