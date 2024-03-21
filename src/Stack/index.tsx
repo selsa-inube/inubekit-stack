@@ -1,19 +1,19 @@
 import { StyledFlex } from "./styles.js";
 import {
-  WrapControl,
-  DirectionAlignment,
-  JustifyContent,
-  AlignItem,
-  AlignContent,
+  IStackWrapControl,
+  IStackDirectionAlignment,
+  IStackJustifyContent,
+  IStackAlignItem,
+  IStackAlignContent,
 } from "./props";
 
 interface IStack {
   children?: React.ReactNode;
-  wrap?: WrapControl;
-  direction?: DirectionAlignment;
-  justifyContent?: JustifyContent;
-  alignItems?: AlignItem;
-  alignContent?: AlignContent;
+  wrap?: IStackWrapControl;
+  direction?: IStackDirectionAlignment;
+  justifyContent?: IStackJustifyContent;
+  alignItems?: IStackAlignItem;
+  alignContent?: IStackAlignContent;
   height?: string;
   width?: string;
   gap?: string;
