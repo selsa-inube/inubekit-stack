@@ -13,16 +13,16 @@ const story = {
 const Default = (args: JSX.IntrinsicAttributes & IStackItem) => (
   <Stack direction="row" gap="20px" wrap="wrap">
     <StackItem flexGrow={1} flexBasis="300px" {...args}>
-      <Squares item="Sales Data" />
+      <Squares item="Item 1" />
     </StackItem>
     <StackItem flexGrow={2} flexBasis="400px" {...args}>
-      <Squares item="User Statistics" />
+      <Squares item="Item 2" />
     </StackItem>
     <StackItem flexGrow={1} flexBasis="200px" {...args}>
-      <Squares item="Recent Activity" />
+      <Squares item="Item 3" />
     </StackItem>
     <StackItem flexGrow={1} flexBasis="250px" {...args}>
-      <Squares item="Marketing Insights" />
+      <Squares item="Item 4" />
     </StackItem>
   </Stack>
 );
