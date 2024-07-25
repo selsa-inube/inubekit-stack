@@ -1,3 +1,15 @@
+# v3.0.0 (Thu Jul 25 2024)
+
+#### 💥 Breaking Change
+
+- Create and Export `<StackItem />` Component from `inubekit/stack` [#13](https://github.com/selsa-inube/inubekit-stack/pull/13) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v2.4.0 (Tue Jul 09 2024)
 
 #### 🚀 Enhancement
