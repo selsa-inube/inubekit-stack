@@ -6,7 +6,7 @@ const alignSelfProperties = [
   "baseline",
   "stretch",
 ];
-type IStackAlignSelfProperties = (typeof alignSelfProperties)[number];
+type IStackItemAlignSelfProperties = (typeof alignSelfProperties)[number];
 
 const props = {
   children: {
@@ -37,4 +37,4 @@ const props = {
 };
 
 export { props };
-export type { IStackAlignSelfProperties };
+export type { IStackItemAlignSelfProperties };

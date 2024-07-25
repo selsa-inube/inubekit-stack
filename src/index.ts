@@ -9,4 +9,4 @@ export type {
   IStackJustifyContent,
   IStackWrapControl,
 } from "./Stack/props";
-export type { IStackAlignSelfProperties } from "./StackItem/props";
+export type { IStackItemAlignSelfProperties } from "./StackItem/props";

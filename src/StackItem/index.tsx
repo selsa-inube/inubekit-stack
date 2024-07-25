@@ -1,4 +1,4 @@
-import { IAlignSelfProperties } from "./props";
+import { IStackItemAlignSelfProperties } from "./props";
 import { StyledStackItem } from "./styles";
 
 interface IStackItem {
@@ -7,7 +7,7 @@ interface IStackItem {
   flexGrow?: number;
   flexShrink?: number;
   flexBasis?: string;
-  alignSelf?: IAlignSelfProperties;
+  alignSelf?: IStackItemAlignSelfProperties;
 }
 
 const StackItem = (props: IStackItem) => {
