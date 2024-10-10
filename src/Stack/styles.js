@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { inube } from "@inubekit/foundations";
 
 const StyledFlex = styled.div`
   display: flex;
