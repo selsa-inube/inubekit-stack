@@ -1,3 +1,16 @@
+# v3.8.1 (Thu Oct 10 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Update stories.styles.ts ([@cmarin001](https://github.com/cmarin001))
+- Update styles.js ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v3.8.0 (Mon Sep 02 2024)
 
 #### 🚀 Enhancement
